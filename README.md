@@ -12,6 +12,7 @@ With this to-do app, users will be able to:
 * Create new todo items.
 
 * Move the items from 'New' to 'In Progress' to 'Archived' to deleted
+
 * Save list items to our browser's local storage so that it persists, even if we close the browser
 
 ![alt text](https://github.com/DevMountain/jQuery2/blob/master/jQuery2%20Example.png?raw=true, "Title Text")
@@ -37,7 +38,7 @@ Now that we've made our basic files, we want to get them all hooked together in 
 #Step 2
 ###Time For jQuery
 
-Now that we have our environment set up and our markup written, it's time to use some jQuery. 
+Now that we have our environment set up and our markup written, it's time to use some jQuery.
 
 The first thing we want to do is go into our scripts.js file and create our document ready function:
 
@@ -62,7 +63,7 @@ We are going to be creating a todo list. So the easiest way to store a list of t
 var listo = [];
 ```
 
-Listo will be our main array for storing tasks.
+listo will be our main array for storing tasks.
 
 Now, we don't want to just store strings. Instead, we will store Task objects into our array. Because our users are going to be making a lot of Tasks we should perhaps streamline the object creating process with a **constructor**
 
@@ -75,7 +76,7 @@ var Task = function(task) {
 ```
 
 
-We now have an array to push our tasks onto and a task constructor so our users can create object tasks for their lists.
+We now have an array to push our tasks into and a task constructor so our users can create object tasks for their lists.
 
 The next thing we want is the ability for a user to write a todo task into our index.html and save it to the array.
 
